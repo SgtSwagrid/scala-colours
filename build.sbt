@@ -4,20 +4,20 @@ import sbt.Keys._
 
 // Basic details about this library:
 ThisBuild / name        := "scala-library-template"
-ThisBuild / description := "A reusable template for Scala libraries."
+ThisBuild / description := "Primitives for manipulating colours and colour palettes in Scala."
 
 ThisBuild / homepage :=
-  Some(url("https://github.com/SgtSwagrid/scala-library-template"))
+  Some(url("https://github.com/SgtSwagrid/scala-colours"))
 
 // The organisation who maintains this library.
-ThisBuild / organization         := "org.example"
-ThisBuild / organizationName     := "Example"
-ThisBuild / organizationHomepage := Some(url("https://example.com"))
+ThisBuild / organization         := "io.github.sgtswagrid"
+ThisBuild / organizationName     := "Alec Dorrington"
+ThisBuild / organizationHomepage := Some(url("https://github.com/SgtSwagrid"))
 
 // The URL for the GitHub repository of this library.
 ThisBuild / scmInfo := Some(ScmInfo(
-  url("https://github.com/SgtSwagrid/scala-library-template"),
-  "scm:git@github.com:SgtSwagrid/scala-library-template.git",
+  url("https://github.com/SgtSwagrid/scala-colours"),
+  "scm:git@github.com:SgtSwagrid/scala-colours.git",
 ))
 
 // The licence under which this library is released.

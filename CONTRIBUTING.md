@@ -2,7 +2,7 @@
 
 ## Workflow
 
-1. Clone the repository: `git clone https://github.com/SgtSwagrid/scala-library-template.git`.
+1. Clone the repository: `git clone https://github.com/SgtSwagrid/scala-colours.git`.
 2. Create a feature branch: `git checkout -b feature_<description>`.
 3. Make your changes and format: `sbt scalafmtAll`
 4. Commit (`git add -A` then `git commit -m "<description>"`) and push (`git push`).
@@ -22,13 +22,6 @@ In general, this project follows a [functional](https://en.wikipedia.org/wiki/Fu
 - Use of immutable [data structures](https://en.wikipedia.org/wiki/Persistent_data_structure) and variables; state updates are by duplication rather than by mutation.
 - Use of pure functions without [side effects](https://en.wikipedia.org/wiki/Side_effect_(computer_science)), or with _explicit_ side effects where unavoidable.
 - Very consistent and explicit use of [types](https://shekhar14.medium.com/type-theory-and-functional-programming-52f81deb36f1).
-
-When performance constraints necessitate the use of mutable state in a limited context, this is allowed.
-
-### Mathematical Abstractions
-
-When it makes sense to do so, try to hide complexity behind mathematical abstractions with obvious semantics.
-A well-chosen abstraction (like `Vec` or `AffineBijection` or `Signal`) makes the code read like the math it represents.
 
 ## Branching Strategy
 

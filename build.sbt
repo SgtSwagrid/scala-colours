@@ -21,7 +21,7 @@ developers := List(
     mail = "alecdorrington@gmail.com",
     url = url("https://github.com/SgtSwagrid")
   )
-),
+)
 
 // The URL for the GitHub repository of this library.
 ThisBuild / scmInfo := Some(ScmInfo(

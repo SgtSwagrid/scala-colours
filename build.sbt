@@ -14,6 +14,15 @@ ThisBuild / organization         := "io.github.sgtswagrid"
 ThisBuild / organizationName     := "Alec Dorrington"
 ThisBuild / organizationHomepage := Some(url("https://github.com/SgtSwagrid"))
 
+developers := List(
+  Developer(
+    id = "SgtSwagrid",
+    name = "Alec Dorrington",
+    mail = "alecdorrington@gmail.com",
+    url = url("https://github.com/SgtSwagrid")
+  )
+),
+
 // The URL for the GitHub repository of this library.
 ThisBuild / scmInfo := Some(ScmInfo(
   url("https://github.com/SgtSwagrid/scala-colours"),

@@ -1,0 +1,20 @@
+{
+  "models": [
+    {
+      "title": "Claude Sonnet",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6",
+      "apiKey": "$ANTHROPIC_API_KEY"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Claude Haiku",
+    "provider": "anthropic",
+    "model": "claude-haiku-4-5-20251001",
+    "apiKey": "$ANTHROPIC_API_KEY"
+  },
+  "tabAutocompleteOptions": {
+    "useCopyBuffer": false,
+    "maxPromptTokens": 1024
+  }
+}

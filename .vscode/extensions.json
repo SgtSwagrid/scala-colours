@@ -3,6 +3,7 @@
     "scalameta.metals",
     "scala-lang.scala",
     "anthropic.claude-code",
+    "Continue.continue",
     "DavidAnson.vscode-markdownlint",
     "github.vscode-github-actions",
     "github.vscode-pull-request-github",

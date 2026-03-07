@@ -9,14 +9,10 @@
       "enabled": false
     },
   },
-  // Agents
-  "github.copilot.enable": {
-    "*": false
-  },
+  "files.insertFinalNewline": true,
   "files.watcherExclude": {
     "**/target": true,
     "**/.bloop": true,
     "**/.metals": true
   },
-  "files.insertFinalNewline": true
 }

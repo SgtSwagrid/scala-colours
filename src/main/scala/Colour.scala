@@ -26,3 +26,12 @@ object Colour:
     val b = Math.clamp(blue, 0, 255).toShort
     val a = Math.clamp(alpha, 0, 255).toShort
     new Colour(r, g, b, a)
+
+  def hex(hex: Int): Colour =
+    val r = ((hex >> 16) & 0xFF).toShort
+    val g = ((hex >> 8) & 0xFF).toShort
+    val b = (hex & 0xFF).toShort
+    new Colour(r, g, b)
+
+  def hex(hex: String): Colour =
+    Colour.hex(Int.fromString(hex, 16)).getOrElse(0).)

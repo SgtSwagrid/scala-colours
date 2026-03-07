@@ -3,7 +3,7 @@ import sbt._
 import sbt.Keys._
 
 // Basic details about this library:
-ThisBuild / name        := "scala-library-template"
+ThisBuild / name        := "scala-colours"
 ThisBuild / description := "Primitives for manipulating colours and colour palettes in Scala."
 
 ThisBuild / homepage :=
@@ -42,6 +42,6 @@ ThisBuild / publishMavenStyle      := true
 Global / excludeLintKeys ++= Set(name, publishMavenStyle)
 
 lazy val colours = (project in file(".")).settings(
-  packagePrefix                          := (ThisBuild / organization).value,
+  packagePrefix                          := "io.github.sgtswagrid.colours",
   libraryDependencies += "org.scalameta" %% "munit" % "1.2.4" % Test,
 )

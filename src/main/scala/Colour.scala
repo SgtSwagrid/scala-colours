@@ -1,16 +1,28 @@
 package io.github.sgtswagrid.colours
 
-class Colour private (val red: Short, val green: Short, val blue: Short):
-  ???
+class Colour private (
+  val red: Short,
+  val green: Short,
+  val blue: Short,
+  val alpha: Short = 255,
+):
 
+  def hex: Int = (red.toInt << 16) | (green.toInt << 8) | blue.toInt
+
+  def hexString: String = f"#$red%02X$green%02X$blue%02X"
 
 object Colour:
 
-  inline def rgb(red: Int, green: Int, blue: Int): Colour =
-    requireInRange(red, "red", 0, 255)
-    requireInRange(green, "green", 0, 255)
-    requireInRange(blue, "blue", 0, 255)
-    Colour(reg.toShort, green.toShort, blue.toShort)
-
-  private inline def requireInRange(value: Int, name: String, min: Int, max: Int): Unit =
-    require(min <= value && value < max, s"Expected value '$name' to be between $min (inclusive) and $max (exclusive), but instead got $value.")
+  def rgb
+    (
+      red: Int,
+      green: Int,
+      blue: Int,
+      alpha: Int = 255,
+    )
+    : Colour =
+    val r = Math.clamp(red, 0, 255).toShort
+    val g = Math.clamp(green, 0, 255).toShort
+    val b = Math.clamp(blue, 0, 255).toShort
+    val a = Math.clamp(alpha, 0, 255).toShort
+    new Colour(r, g, b, a)

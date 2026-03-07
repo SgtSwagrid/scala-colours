@@ -23,11 +23,8 @@ metals.sbt
 .claude/worktrees/
 .playwright-mcp/
 
-# IDEs:
-.idea/*
-.vscode/
-
 # Share IntelliJ code style, dictionaries, templates, and plugins:
+.idea/*
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/fileTemplates/
@@ -39,3 +36,8 @@ metals.sbt
 !.idea/scala_compiler.xml
 !.idea/scala_settings.xml
 !.idea/vcs.xml
+
+# Share VSCode workspace settings and extensions:
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json

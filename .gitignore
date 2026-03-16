@@ -1,29 +1,21 @@
-# JVM binaries:
+# Binaries
 *.class
-/META-INF/
-
-# JVM logs:
-*.log
-hs_err_pid*
-
-# Binary output directories:
 target/
 .jvm/
 .js/
+META-INF/
 
-# Build tools:
-/project/project
-.metals/
+# Logs
+*.log
+hs_err_pid*
+
+# Build tools
 .bsp/
-.bloop
+.bloop/
+.metals/
 metals.sbt
 
-# Agents:
-.claude/settings.local.json
-.claude/worktrees/
-.playwright-mcp/
-
-# Share IntelliJ code style, dictionaries, templates, and plugins:
+# IntelliJ (share code style, dictionaries, templates, and plugins)
 .idea/*
 !.idea/codeStyles/
 !.idea/dictionaries/
@@ -37,7 +29,12 @@ metals.sbt
 !.idea/scala_settings.xml
 !.idea/vcs.xml
 
-# Share VSCode workspace settings and extensions:
+# VSCode (share workspace settings and extensions)
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+
+# Agents
+.claude/settings.local.json
+.claude/worktrees/
+.playwright-mcp/
